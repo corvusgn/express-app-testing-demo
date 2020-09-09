@@ -5,7 +5,8 @@ const app = require('../../app/server');
 
 describe('index route', () => {
   afterEach(() => {
-    app.server.close();
+    //Descomentar para sólo ejecución de pruebas
+   // app.server.close();
   });
 
   test('should respond with a 200 with no query parameters', () => {

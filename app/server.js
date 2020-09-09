@@ -19,7 +19,12 @@ require('./route')(app);
 
 // server
 const port = process.env.PORT || 8085;
-app.server = app.listen(port);
-console.log(`listening on port ${port}`);
+// app.server = app.listen(port);
+// console.log(`listening on port ${port}`);
+
+if(!module.parent){
+    app.server = app.listen(port);
+    console.log(`listening on port ${port}`);
+}
 
 module.exports = app;
