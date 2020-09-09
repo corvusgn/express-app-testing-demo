@@ -22,6 +22,7 @@ const port = process.env.PORT || 8086;
 // app.server = app.listen(port);
 // console.log(`listening on port ${port}`);
 
+
 //Se asegura de no intentar volver a escuchar en un puerto en uso para evitar el error EADDRINUSE
 // cuando se ejecutan pruebas con el servidor corriendo
 if(!module.parent){
